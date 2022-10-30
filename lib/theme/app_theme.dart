@@ -9,7 +9,14 @@ class AppTheme {
       backgroundColor: primary,
       elevation: 0
       ),
-      textButtonTheme: TextButtonThemeData(style: TextButton.styleFrom(foregroundColor: primary))
+      textButtonTheme: TextButtonThemeData(style: TextButton.styleFrom(foregroundColor: primary)),
+      floatingActionButtonTheme: FloatingActionButtonThemeData(backgroundColor: primary ),
+      elevatedButtonTheme: ElevatedButtonThemeData(style: ElevatedButton.styleFrom(
+        backgroundColor: primary,
+        shape: StadiumBorder(),
+        elevation: 0
+        )
+      ),
   );
 
   static final ThemeData DarkTheme = ThemeData.dark().copyWith(
@@ -19,8 +26,10 @@ class AppTheme {
           elevation: 0
       ),
     scaffoldBackgroundColor: Colors.black,
-    textButtonTheme: TextButtonThemeData(style: TextButton.styleFrom(foregroundColor: primary))
-
+    textButtonTheme: TextButtonThemeData(
+        style: TextButton.styleFrom(foregroundColor: primary,
+        elevation: 5 )
+    )
   );
 
 }

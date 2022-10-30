@@ -5,11 +5,11 @@ class CustomCardType2 extends StatelessWidget {
   const CustomCardType2({
     Key? key,
     required this.imageUrl,
-    required this.textImg})
+             this.name})
       : super(key: key);
 
   final String imageUrl;
-  final String textImg;
+  final String? name;
 
   @override
   Widget build(BuildContext context) {
@@ -30,11 +30,12 @@ class CustomCardType2 extends StatelessWidget {
               fit: BoxFit.cover,
               fadeInDuration:  Duration(milliseconds: 300),
             ),
-            Container(
-              alignment: AlignmentDirectional.centerEnd,
-              padding: EdgeInsets.only(right: 20,top: 10,bottom: 10),
-                child: Text(textImg)
-            )
+            if (name != null)
+              Container(
+                alignment: AlignmentDirectional.centerEnd,
+                padding: EdgeInsets.only(right: 20,top: 10,bottom: 10),
+                  child: Text(name! )
+              )
           ],
         ),
       );
