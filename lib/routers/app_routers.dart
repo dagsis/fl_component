@@ -1,4 +1,5 @@
 import 'package:fl_component/models/models.dart';
+import 'package:fl_component/pages/inputs_page.dart';
 import 'package:fl_component/pages/pages.dart';
 import 'package:flutter/material.dart';
 
@@ -12,6 +13,7 @@ class AppRoutes {
     MenuOption(route: 'card', icon: Icons.credit_card, name: 'Cards Page', page: CardsPage()),
     MenuOption(route: 'alert', icon: Icons.add_alert_outlined, name: 'Alert Page', page: AlertPage()),
     MenuOption(route: 'avatar', icon: Icons.supervised_user_circle_outlined, name: 'Circle Avatar', page: AvatarPage()),
+    MenuOption(route: 'inputs', icon: Icons.input_outlined, name: 'Inputs Page', page: InputsPage()),
   ];
 
   static Map<String, Widget Function(BuildContext)> getAppRoutes(){
