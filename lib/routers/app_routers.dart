@@ -14,6 +14,7 @@ class AppRoutes {
     MenuOption(route: 'alert', icon: Icons.add_alert_outlined, name: 'Alert Page', page: AlertPage()),
     MenuOption(route: 'avatar', icon: Icons.supervised_user_circle_outlined, name: 'Circle Avatar', page: AvatarPage()),
     MenuOption(route: 'inputs', icon: Icons.input_outlined, name: 'Inputs Page', page: InputsPage()),
+    MenuOption(route: 'slider', icon: Icons.slow_motion_video_rounded, name: 'Slider Page', page: SliderPage()),
   ];
 
   static Map<String, Widget Function(BuildContext)> getAppRoutes(){

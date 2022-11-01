@@ -5,3 +5,4 @@ export 'package:fl_component/pages/listview2_page.dart';
 export 'package:fl_component/pages/home_page.dart';
 export 'package:fl_component/pages/avatar_page.dart';
 export 'package:fl_component/pages/inputs_page.dart';
+export 'package:fl_component/pages/slider_page.dart';
