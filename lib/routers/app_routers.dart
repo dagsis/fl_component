@@ -15,6 +15,7 @@ class AppRoutes {
     MenuOption(route: 'avatar', icon: Icons.supervised_user_circle_outlined, name: 'Circle Avatar', page: AvatarPage()),
     MenuOption(route: 'inputs', icon: Icons.input_outlined, name: 'Inputs Page', page: InputsPage()),
     MenuOption(route: 'slider', icon: Icons.slow_motion_video_rounded, name: 'Slider Page', page: SliderPage()),
+    MenuOption(route: 'listviewbuider', icon: Icons.build_circle_outlined, name: 'InfiniteScroll', page: ListViewBuiderPage()),
   ];
 
   static Map<String, Widget Function(BuildContext)> getAppRoutes(){
